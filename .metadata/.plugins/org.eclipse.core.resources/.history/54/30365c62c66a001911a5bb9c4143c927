@@ -1,0 +1,7 @@
+
+public class Schiff {
+	private String name;
+	private String kennzeichen;
+	private double laenge;
+	
+}

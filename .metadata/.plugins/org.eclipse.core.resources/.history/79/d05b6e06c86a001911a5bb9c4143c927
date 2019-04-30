@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Schifffahrtsamt {
+	private String name;
+	private List<Schiff> schiffe;
+	
+	public Schifffahrtsamt(String name) {
+		this.name = name;
+		schiffe = new ArrayList<Schiff>();
+	}
+	
+	public void addSchiff(Schiff schiff) {
+		this.schiffe.add(schiff);
+	}
+	
+	public void meldung(String nachricht, int dringlichkeit) {
+		if (dringlichkeit == 1) {
+			for (Schiff schiff: this.schiffe) {
+				schiff.empfangeNachricht(nachricht);
+			}
+		}
+	}
+}

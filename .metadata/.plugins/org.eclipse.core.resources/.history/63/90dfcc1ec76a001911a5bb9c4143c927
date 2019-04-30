@@ -1,0 +1,6 @@
+
+public class Schifffahrtsamt {
+	private List<Schiff> schiffe;
+	
+	
+}

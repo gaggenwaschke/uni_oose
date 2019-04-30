@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Schifffahrtsamt {
+	private String name;
+	private List<Schiff> schiffe;
+	
+	public Schifffahrtsamt(String name) {
+		this.name = name;
+		schiffe = new ArrayList<Schiff>();
+	}
+	
+	public void addSchiff(Schiff schiff) {
+		
+	}
+	
+}
