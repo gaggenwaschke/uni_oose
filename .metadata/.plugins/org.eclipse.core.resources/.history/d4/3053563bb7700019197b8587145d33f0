@@ -1,0 +1,8 @@
+
+public class Sigleton {
+	private Singleton()
+	{
+		
+	}
+	
+}

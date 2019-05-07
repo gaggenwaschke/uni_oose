@@ -1,0 +1,22 @@
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Fur leylaFur = new Fur(10);
+		Sheep leyla = new Sheep("Leyla", leylaFur);
+		Sheep luisa = leyla.clone();
+		
+		System.out.println(leyla.toString());
+		System.out.println(luisa.toString());
+		
+		luisa.name = "luisa";
+		luisa.shear();
+		
+		System.out.println(leyla.toString());
+		System.out.println(luisa.toString());
+	}
+
+}

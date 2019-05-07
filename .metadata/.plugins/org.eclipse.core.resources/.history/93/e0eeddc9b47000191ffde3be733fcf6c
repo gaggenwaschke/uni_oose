@@ -1,0 +1,9 @@
+
+public class CD implements Playable {
+
+	public void song() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
