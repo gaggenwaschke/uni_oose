@@ -1,0 +1,5 @@
+
+public class Kugel extends Koerper {
+	private double r;
+	
+}

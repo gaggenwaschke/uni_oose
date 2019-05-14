@@ -1,0 +1,19 @@
+class Angestellter {
+	private String vorname;
+	private String nachname;
+	private int alter;
+	private int gehalt;
+	
+	public int getAlter() {
+		return alter;
+	}	
+	public int getGehalt() {
+		return gehalt;
+	}	
+	public String getNachname() {
+		return nachname;
+	}	
+	public String getVorname() {
+		return vorname;
+	}
+}

@@ -1,0 +1,5 @@
+class CallEg {
+	public void methodA() throws ArithmeticException { }
+	public void methodB() throws ArithmeticException { }
+	public void methodC() throws ArithmeticException { }
+}

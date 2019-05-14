@@ -1,0 +1,19 @@
+
+public class Quader extends Koerper {
+	private Vector3d sizes;
+	
+	public Quader(Vector3d position, Vector3d sizes) {
+		super(position);
+		this.sizes = sizes;
+	}
+	
+	public Vector3d getSizes() {
+		return sizes;
+	}
+	
+	public void scale(double a) {
+		sizes = Vector3d.mul(sizes, a);
+	}
+	
+
+}

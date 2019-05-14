@@ -1,0 +1,17 @@
+
+public class SortDoubles {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+	public static double[] sortDouble(double[] a) {
+		double[] temp = new double[a.length];
+		
+	}
+}

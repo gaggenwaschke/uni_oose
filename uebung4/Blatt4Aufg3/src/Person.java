@@ -31,6 +31,13 @@ public class Person implements Comparable{
 	 */
 	
 	public int comparetoo(Person p) {
+        int val = 0;
+        val = this.name.CompareTo(p.name);
+        if (val != 0) return val;
+        val = this.vorname.CompareTo(p.vorname);
+        if (val != 0) return val;
+
+
 		if(this.name.equals(p.name)) {
 			if(this.vorname.equals(p.vorname)) {
 				if(this.plz == p.plz) {

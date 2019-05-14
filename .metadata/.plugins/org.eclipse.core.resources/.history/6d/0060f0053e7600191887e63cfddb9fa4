@@ -1,0 +1,5 @@
+
+public class Koerper {
+	protected Vector3d p;
+	
+}

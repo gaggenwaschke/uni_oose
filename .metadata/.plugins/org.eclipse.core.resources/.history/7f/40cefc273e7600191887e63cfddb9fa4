@@ -1,0 +1,8 @@
+
+public class Koerper {
+	protected Vector3d p;
+	
+	public Vector3d move(Vector3d offset) {
+		return p = Vector3d.add(p, offset);
+	}	
+}
