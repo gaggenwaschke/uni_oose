@@ -1,0 +1,34 @@
+OoSe Blatt 4
+
+
+Aufgabe 1:
+
+a)
+Ausgabe 1) 4	- auto1 ist vom Typ Auto und hat deswegen 4 Reifen
+Ausgabe 2) 8	- auto1 wird als Lastwagen aufgerufen, dieser hat 8 Reifen
+Ausgabe 3) 8	- bei getReifen wird die Reifenanzahl von "this" ausgegeben, this -> auto1. auto1 ist allerdings als newLastwagen initialisiert worden und hat damit per default 8 Reifen
+Ausgabe 4) 8	- (Lastwagen) auto1 benutzt die getReifen-Methode aus Lastwagen.java, deswegen wird die Reifenzahl von Lastwagen, also 8 zurückgegeben
+
+b)
+Ausgaben: 	4	8	4	4
+Erklärung: Lastwagen verfügt über keine getReifen-Methode mehr, deswegen wird bei der dritten und vierten Ausgabe immer die getReifen-Methode aus Auto verwendet
+
+c) Es entsteht ein Fehler bei der dritten Ausgabe. Beim Aufruf von auto1 ohne den Zusatz (Lastwagen) wird ausschließlich in Auto.java nach einer getReifen-Methode gesucht. Diese existiert nicht.
+
+
+
+Aufgabe 2:
+
+a) "I don't like Blumenkohl an Gorgonzolasoße"
+essen1 ist vom Typ Cauliflower, deswegen wird bei student.eat die zweite eat-Methode aufgerufen, da diese einen Eingabewert vom Typ Cauliflower hat. So kommt "I don't like " zustande.
+Dann wird die getMeal-Methode von essen1 verwendet, es kommt die aus Cauliflower.java zum Einsatz, erneut weil essen1 vom Typ Cauliflower ist. So kommt "Blumenkohl an Gorgonzolas0ße" zustande.
+
+b) "I like Spaghetti Bologneser Art"
+essen2 ist vom Typ Spaghetti, deswegen wird bei student.eat die erste eat-Methode aufgerufen, denn es gibt keine mit einem Eingabewert vom Typ Spaghetti, aber Spaghetti implementiert Food und die erste eat-Methode hat eine Aigabe vom Typ Food. So kommt "I like " zustande.
+Dann wird die getMeal-Methode von essen2 verwendet, es kommt die aus Spaghetti.java zum Einsatz, weil essen2 vom Typ Spaghetti ist. So kommt "Spaghetti Bologneser Art" zustande.
+
+c) "I like Blumenkohl an Gorgonzolasoße"
+essen ist vom Typ Food, wird aber als new Cauliflower initialisiert. Wegen ersterem kommt die erste eat-Methode aus Student zum Einsatz, wegen letzterem wird aber "Blumenkohl an Gorgonzolasoße" ausgegeben.
+
+
+
