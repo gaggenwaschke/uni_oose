@@ -12,5 +12,8 @@ public class Persontest {
 		Comparable kleinstes = Finder.findMin(persarr);
 		Person kleinster = (Person) kleinstes;
 		System.out.println(kleinster.vorname + " " + kleinster.name + " wohnhaft in " + kleinster.straße + " " + kleinster.hausnr + " " + kleinster.plz + " ist das kleinste Element");
+		Integer[] testarr = {5, 10, 1, 9, 18};
+		Integer kleinstezahl = (Integer)Finder.findMin(testarr);
+		System.out.println("Kleinste Zahl: " + kleinstezahl);
 	}
 }

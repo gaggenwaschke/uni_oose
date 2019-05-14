@@ -2,11 +2,11 @@
 public class Person implements Comparable{
 	public String name;
 	public String vorname;
-	public int plz;
+	public Integer plz;
 	public String straße;
-	public int hausnr;
+	public Integer hausnr;
 	
-	public Person(String name, String vorname, int postleitzahl, String straße, int hausnummer) {
+	public Person(String name, String vorname, Integer postleitzahl, String straße, Integer hausnummer) {
 		this.name = name;
 		this.vorname = vorname;
 		this.plz = postleitzahl;
@@ -31,6 +31,7 @@ public class Person implements Comparable{
 	 */
 	
 	public int comparetoo(Person p) {
+<<<<<<< HEAD
         int val = 0;
         val = this.name.CompareTo(p.name);
         if (val != 0) return val;
@@ -54,5 +55,14 @@ public class Person implements Comparable{
 			}else { return 1; }
 		}else if(this.name.length() <= p.name.length()){ return -1;
 		}else { return 1; }
+=======
+		int value = 0;
+		if(0 != (value = this.name.compareTo(p.name))) { return value; }
+		if(0 != (value = this.vorname.compareTo(p.vorname))) { return value; }
+		if(0 != (value = this.plz.compareTo(p.plz))) { return value; }
+		if(0 != (value = this.straße.compareTo(p.straße))) { return value; }
+		if(0 != (value = this.hausnr.compareTo(p.hausnr))) { return value; }
+		return 0;
+>>>>>>> 1733a3c068de8712bb11af7e81eaa588634e4c6d
 	}
 }
