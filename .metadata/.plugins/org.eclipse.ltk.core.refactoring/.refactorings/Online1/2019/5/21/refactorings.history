@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;IFunction.java&apos; to &apos;IFunktion.java&apos;&#x0A;- Original project: &apos;Online1&apos;&#x0A;- Original element: &apos;IFunction.java&apos;&#x0A;- Renamed element: &apos;IFunktion.java&apos;" description="Rename compilation unit &apos;IFunction.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{IFunction.java" name="IFunktion.java" references="false" stamp="1558435096023" version="1.0"/>
+</session>

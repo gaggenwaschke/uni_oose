@@ -1,0 +1,11 @@
+
+public class A1_Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Angestellter a = new Angestellter()
+	}
+
+}
