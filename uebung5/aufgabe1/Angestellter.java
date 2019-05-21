@@ -1,6 +1,6 @@
 class Angestellter {
-	private String vorname;
-	private String nachname;
+	private final String vorname;
+	private final String nachname;
 	private int alter;
 	protected int gehalt;
 	
