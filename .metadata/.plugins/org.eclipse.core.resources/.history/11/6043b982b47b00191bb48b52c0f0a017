@@ -1,5 +1,0 @@
-
-public interface IFunktion {
-	double evaluate(double x);
-	IFunction derivate();
-}

@@ -1,9 +1,0 @@
-
-public class EFunktion implements IFunktion {
-
-	public double evaluate(double x) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-}

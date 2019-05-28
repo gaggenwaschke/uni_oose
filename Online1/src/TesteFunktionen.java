@@ -2,7 +2,6 @@ import java.util.*;
 
 
 public class TesteFunktionen {
-
 	/**
 	 * @param args
 	 */
@@ -21,5 +20,4 @@ public class TesteFunktionen {
 		Plotter.druckeWertetabelle(l.get(1), 0.0, 1.0);
 		Plotter.druckeGraph(l.get(1), 0.0, 1.0);		
 	}
-
 }

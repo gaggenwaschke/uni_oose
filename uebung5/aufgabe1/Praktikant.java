@@ -4,7 +4,6 @@ public class Praktikant extends Angestellter {
 	
 	public Praktikant(String vorname, String nachname, int alter) {
 		super(vorname, nachname, alter, Praktikant.gehalt);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public int getGehalt() {

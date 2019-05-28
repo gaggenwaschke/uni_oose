@@ -2,10 +2,6 @@
 import java.util.ArrayList;
 
 public class KoerperTest {
-
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		ArrayList<Koerper> l = new ArrayList<Koerper>();
 		l.add(new Kugel(new Vector3d(1.0, 2.0, 3.0), 4));
@@ -15,5 +11,4 @@ public class KoerperTest {
 			System.out.println(k.toString());
 		}
 	}
-
 }

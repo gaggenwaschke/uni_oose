@@ -1,8 +1,8 @@
 
-public class Koerper {
+public abstract class Koerper {
 	protected Vector3d p;
 	
-	public Koerper(Vector3d position) {
+	protected Koerper(Vector3d position) {
 		this.p = position;
 	}
 	
@@ -14,13 +14,9 @@ public class Koerper {
 		return p;
 	}
 	
-	public void scale(double a) {
-		// do nothing, just virtual
-	}
+	public abstract void scale(double a);
 	
-	public double getVolume() {
-		return 0.0;
-	}
+	public abstract double getVolume();
 	
 	@Override
 	public String toString() {

@@ -3,8 +3,7 @@ class Angestellter {
 	private final String nachname;
 	private int alter;
 	protected int gehalt;
-	
-	
+		
 	public Angestellter(String vorname, String nachname, int alter, int gehalt) {
 		this.vorname = vorname;
 		this.nachname = nachname;
@@ -30,6 +29,6 @@ class Angestellter {
 	}
 	
 	public void erhoeheGehalt(int erhoehung) {
-		this.gehalt += erhoehung;
+		gehalt += erhoehung;
 	}
 }
