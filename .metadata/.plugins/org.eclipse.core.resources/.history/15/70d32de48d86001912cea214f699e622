@@ -1,0 +1,8 @@
+import java.lang.RuntimeException;
+
+public class NumberTooBigException extends RuntimeException {
+	public NumberTooBigException()
+	{
+		super("The given number was too big");
+	}
+}

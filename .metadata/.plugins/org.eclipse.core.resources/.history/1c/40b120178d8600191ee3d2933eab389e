@@ -1,0 +1,5 @@
+import java.lang.RuntimeException;
+
+public class NumberTooBigException extends RuntimeException {
+
+}

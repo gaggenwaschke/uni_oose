@@ -1,0 +1,9 @@
+
+public class TestExceptions {
+	public static void main(String[] args) {		
+		System.out.println("Bitte geben Sie die Anzahl der Benutzer ein!");
+		String input = System.console().readLine();
+		int players = Integer.parseInt(input);
+		if (players > 5) throw new NumberTooBigException();
+	}
+}

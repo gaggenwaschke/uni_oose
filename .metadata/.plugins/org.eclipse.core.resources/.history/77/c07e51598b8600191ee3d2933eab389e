@@ -1,0 +1,8 @@
+import java.io.IOException;
+
+public class ExceptionInheritance {
+	public static void main(String[] args) throws IOException {
+		Hamburger c=new Hamburger();
+		c.eat();
+	}
+}

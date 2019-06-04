@@ -1,0 +1,104 @@
+
+public class DoubleList {
+	private DoubleNode head;
+	
+	DoubleList()
+	{
+		head = null;
+	}
+	
+	public void add(double d)
+	{
+		DoubleNode next = new DoubleNode(d);
+		
+		if (head == null)
+		{
+			head = next;
+		}
+		else
+		{
+			DoubleNode current = head;
+			
+			while(current.getNext() != null)
+			{
+				current = current.getNext();
+			}
+			
+			current.setNext(next);
+		}
+	}
+
+	public void insertFirst(double d)
+	{
+		DoubleNode node = new DoubleNode(d);
+		node.setNext(head);
+		head = node;
+	}
+	
+	public double get(int i)
+	{
+		int n = 0;
+		DoubleNode current = head;
+		
+		while ((n < i) && (current != null))
+		{
+			current = current.getNext();
+			n++;
+		}
+		
+		if (current == null) return 0.0;
+		else return current.getValue();
+	}
+	
+	public String toString()
+	{
+		String str = "";
+		DoubleNode current = head;
+		while(current != null)
+		{
+			str += current.getValue() + ";";
+			current = current.getNext();
+		}
+		return str;
+	}
+	
+	public void remove(int i)
+	{
+		DoubleNode current = head;
+		DoubleNode next;
+		int n = 0;
+		
+		if (head == null) return;
+		
+		if (i == 0)
+		{
+			// first element removed
+			head = head.getNext();
+		}
+		else
+		{
+			for (current = head; current != null; current = current.getNext())
+			{
+				n++;
+				if (n == i)
+				{
+					
+				}
+			}
+		}
+	}
+	
+	private DoubleNode getNode(int i)
+	{
+		int n = 0;
+		DoubleNode n = head;
+		
+		while(n != null && n < i)
+		{
+			n++;
+			n = n.getNext();
+		}
+		
+		return n;
+	}
+}

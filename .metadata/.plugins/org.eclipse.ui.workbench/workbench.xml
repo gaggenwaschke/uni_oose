@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="13" version="2.0">
 <workbenchAdvisor/>
 <window height="741" maximized="true" width="684" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -19,7 +19,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="214" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -28,10 +28,26 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumberTooBigException.java" partName="NumberTooBigException.java" path="/home/yoshi/Dropbox/Uni_Bonn/ooSE/uebung6/aufgabe3/NumberTooBigException.java" title="NumberTooBigException.java" tooltip="uebung6/aufgabe3/NumberTooBigException.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/uebung6/aufgabe3/NumberTooBigException.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="148" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestExceptions.java" partName="TestExceptions.java" path="/home/yoshi/Dropbox/Uni_Bonn/ooSE/uebung6/aufgabe3/TestExceptions.java" title="TestExceptions.java" tooltip="uebung6/aufgabe3/TestExceptions.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/uebung6/aufgabe3/TestExceptions.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="567" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumberTooSmallException.java" partName="NumberTooSmallException.java" path="/home/yoshi/Dropbox/Uni_Bonn/ooSE/uebung6/aufgabe3/NumberTooSmallException.java" title="NumberTooSmallException.java" tooltip="uebung6/aufgabe3/NumberTooSmallException.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/uebung6/aufgabe3/NumberTooSmallException.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="187" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
@@ -66,6 +82,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="497" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -106,7 +125,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -253,7 +272,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.7450658" ratioLeft="453" ratioRight="155" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.59375" ratioLeft="361" ratioRight="247" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -366,7 +385,88 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/uebung6/aufgabe3/NumberTooBigException.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/uebung6/aufgabe3/TestExceptions.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/uebung6/aufgabe3/NumberTooSmallException.java"/>
+</editors>
+<item historyLabel="NumberTooBigException.java" index="0">
+<position info="not_deleted" x="148" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="93" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="346" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="347" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="451" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="531" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="660" y="0"/>
+</item>
+<item historyLabel="NumberTooBigException.java" index="0">
+<position info="not_deleted" x="148" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="660" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="273" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="274" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="64" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="416" y="37"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="480" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="657" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="566" y="0"/>
+</item>
+<item historyLabel="NumberTooSmallException.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="NumberTooSmallException.java" index="2">
+<position info="not_deleted" x="184" y="0"/>
+</item>
+<item historyLabel="NumberTooSmallException.java" index="2">
+<position info="not_deleted" x="187" y="0"/>
+</item>
+<item historyLabel="NumberTooBigException.java" index="0">
+<position info="not_deleted" x="148" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="566" y="0"/>
+</item>
+<item historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="621" y="0"/>
+</item>
+<item active="true" historyLabel="TestExceptions.java" index="1">
+<position info="not_deleted" x="194" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -383,6 +483,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumberTooSmallException.java" tooltip="uebung6/aufgabe3/NumberTooSmallException.java">
+<persistable path="/uebung6/aufgabe3/NumberTooSmallException.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestExceptions.java" tooltip="uebung6/aufgabe3/TestExceptions.java">
+<persistable path="/uebung6/aufgabe3/TestExceptions.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumberTooBigException.java" tooltip="uebung6/aufgabe3/NumberTooBigException.java">
+<persistable path="/uebung6/aufgabe3/NumberTooBigException.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CallEg.java" tooltip="uebung5/aufgabe4/CallEg.java">
 <persistable path="/uebung5/aufgabe4/CallEg.java"/>
 </file>
@@ -418,15 +527,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Calc.java" tooltip="aufgabe3/src/Calc.java">
 <persistable path="/aufgabe3/src/Calc.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Plotter.java" tooltip="Online1/src/Plotter.java">
-<persistable path="/Online1/src/Plotter.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EFunktion.java" tooltip="Online1/src/EFunktion.java">
-<persistable path="/Online1/src/EFunktion.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IFunction.java" tooltip="Online1/src/IFunction.java">
-<persistable path="/Online1/src/IFunction.java"/>
 </file>
 </mruList>
 </workbench>
