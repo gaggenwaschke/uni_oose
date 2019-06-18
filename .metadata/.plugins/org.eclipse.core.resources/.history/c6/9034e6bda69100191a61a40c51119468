@@ -1,0 +1,17 @@
+
+public class TestBaum {
+	public static void main(String[] args) {
+		Baum t = new Baum();
+		TNode right = new TNode(4);
+		TNode mid = new TNode(3);
+		mid.setRight(right);
+		TNode left = mid;
+		mid = new TNode(5);
+		mid.setLeft(left);
+		mid.setRight(new TNode(7));
+		left = mid;
+		mid = new TNode(10);
+		mid.setLeft(left);
+	}
+
+}

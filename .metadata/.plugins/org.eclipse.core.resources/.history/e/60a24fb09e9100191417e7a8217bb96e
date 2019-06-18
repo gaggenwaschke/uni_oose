@@ -1,0 +1,21 @@
+
+public class DateiBeobachter implements Runnable {
+	String path = null;
+	java.io.File file = null;
+	
+	public DateiBeobachter(String path) {
+		this.path = path;
+	}
+	
+	public DateiBeobachter(java.io.File file) {
+		this.file = file;
+	}
+
+	public void run() {
+		java.io.file current;
+		if (file != null)
+		{
+			current = file;
+		}
+	}
+}

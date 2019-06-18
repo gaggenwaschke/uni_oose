@@ -1,7 +1,0 @@
-
-public class DoubleNode {
-	private double value;
-	private DoubleNode next;
-	
-		
-}

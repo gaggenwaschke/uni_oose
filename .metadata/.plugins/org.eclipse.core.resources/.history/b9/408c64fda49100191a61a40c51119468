@@ -1,0 +1,65 @@
+
+public class Baum {
+	private TNode root;
+	
+	public Baum() {
+	}	
+	public Baum(TNode root) {
+		this.root = root;
+	}
+	
+	public TNode getRoot() {
+		return root;
+	}
+	public void setRoot(TNode root) {
+		this.root = root;
+	}
+	
+	public static void Inorder(TNode node) {
+		TNode next = node.getLeft();
+		if (next != null)
+		{
+			Inorder(next);
+		}
+		
+		System.out.println(node.getValue());
+		
+		next = node.getRight();
+		if (next != null)
+		{
+			Inorder(next);
+		}
+	}
+	
+	public static void Preorder(TNode node) {
+		System.out.println(node.getValue());
+		
+		TNode next = node.getLeft();
+		if (next != null)
+		{
+			Preorder(next);
+		}
+		
+		next = node.getRight();
+		if (next != null)
+		{
+			Preorder(next);
+		}
+	}
+	
+	public static void Postorder(TNode node) {				
+		TNode next = node.getLeft();
+		if (next != null)
+		{
+			Postorder(next);
+		}
+		
+		next = node.getRight();
+		if (next != null)
+		{
+			Postorder(next);
+		}
+		
+		System.out.println(node.getValue());
+	}
+}

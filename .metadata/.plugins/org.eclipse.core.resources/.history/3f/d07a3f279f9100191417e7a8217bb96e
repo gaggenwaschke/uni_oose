@@ -1,0 +1,32 @@
+import java.io.IOException;
+
+
+public class DateiBeobachter implements Runnable {
+	String path = null;
+	java.io.File file = null;
+	
+	public DateiBeobachter(String path) {
+		this.path = path;
+	}
+	
+	public DateiBeobachter(java.io.File file) {
+		this.file = file;
+	}
+
+	public void run() {
+		// get file
+		if (file == null)
+		{
+			try {
+				file = new java.io.File(path);
+			} catch (IOException e) {
+				System.out.println("Error while trying to open the file");
+				return;
+			}
+		}
+		
+		while (true) {
+			file.lastModified()
+		}
+	}
+}

@@ -1,0 +1,14 @@
+
+public class BeobachterTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		DateiBeobachter obacht = new DateiBeobachter("test.txt");
+		obacht.run();
+		
+		
+	}
+
+}

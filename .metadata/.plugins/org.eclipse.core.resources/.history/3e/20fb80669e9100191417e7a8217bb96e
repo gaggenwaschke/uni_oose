@@ -1,0 +1,11 @@
+
+public class DateiBeobachter implements Runnable {
+	public DateiBeobachter(String path) {
+	}
+	
+	public DateiBeobachter(java.io.File file) {
+	}
+
+	public void run() {
+	}
+}
