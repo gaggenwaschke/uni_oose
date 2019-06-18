@@ -1,3 +1,3 @@
-Indem man ein Objekt von der Thread Klasse ableitet.
-Indem man das Runable Interface implementiert.
+Indem man ein Objekt von der Thread Klasse ableitet. -> volle Kontrolle über den Thread
+Indem man das Runable Interface implementiert. -> wird einfach nur in einem Thread ausgeführt. Einfach.
 Indem man das ExecutorService interface implementiert.

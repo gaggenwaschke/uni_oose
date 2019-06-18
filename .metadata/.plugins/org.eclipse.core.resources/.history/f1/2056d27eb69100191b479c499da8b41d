@@ -8,4 +8,5 @@ public class BeobachterTest {
 		DateiBeobachter obacht = new DateiBeobachter("test.txt");
 		obacht.run();
 	}
+
 }
