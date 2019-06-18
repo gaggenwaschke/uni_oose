@@ -1,0 +1,21 @@
+public class Foo {
+	public static <T> T bar(T x, T y) {
+		return x;
+	}
+	public static void main(String[] args) {
+		Object o;
+		R r = new
+				E e = new
+				B b = new
+				G g = new
+				U u = new
+				R[] x;
+		E[] y;
+		R();
+		E();
+		B();
+		G();
+		U();
+		// Stelle 1
+	}
+}

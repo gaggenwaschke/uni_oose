@@ -1,0 +1,12 @@
+public class TierKaefig<E> {
+	private E insasse;
+	public void setInsasse(E x){
+		insasse= x;
+	}
+	public E getInsasse(){
+		return insasse;
+	}
+}
+public class Tier {}
+public class Hund extends Tier {}
+public class Katze extends Tier {}

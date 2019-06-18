@@ -1,0 +1,4 @@
+a) Konstruktor ist restritiver als Feld -> kompiliert nicht
+b) kompiliert nicht
+c) ohne Probleme
+d) mangelnde Typsicherheit
