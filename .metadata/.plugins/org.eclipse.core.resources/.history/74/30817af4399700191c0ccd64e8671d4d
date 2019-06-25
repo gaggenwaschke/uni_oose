@@ -1,0 +1,64 @@
+import java.util.List;
+
+
+public class Main {
+	
+	private static void printList(List<Integer> lst) {
+		for (Integer i : lst) {
+			System.out.println(i);
+		}
+	}
+
+	/**
+	 * @param args
+	 * @throws InterruptedException 
+	 */
+	public static void main(String[] args) throws InterruptedException {
+		// 2a
+		System.out.println("------------------2a---------------");
+		
+		int lower = 1;
+		int upper = 4000;
+		List<Integer> prims = PrimzahlRechner.primzahlenZwischen(lower, upper);
+		printList(prims);
+		
+		// 3a
+		System.out.println("\n\n\n------------------3a---------------");
+		
+		PrimzahlRechner r1 = new PrimzahlRechner(1, 1000);
+		PrimzahlRechner r2 = new PrimzahlRechner(1001, 2000);
+		PrimzahlRechner r3 = new PrimzahlRechner(2001, 3000);
+		PrimzahlRechner r4 = new PrimzahlRechner(3001, 4000);
+		
+		r1.start();
+		r2.start();
+		r3.start();
+		r4.start();
+		
+		r1.join();
+		r2.join();
+		r3.join();
+		r4.join();
+		
+		printList(r1.getErgebnis());
+		printList(r2.getErgebnis());
+		printList(r3.getErgebnis());
+		printList(r4.getErgebnis());
+		
+		/*
+		 * r1 wird als rester fertig, da die Komplexität je Berechnung
+		 * mit dieser Methode O(sqrt(x)) ist, wobei x die zu überprüfende
+		 * Zahl ist.
+		 * Die Gesamtkomplexität ist also das integral von der unteren zur
+		 * oberen Grenze über sqrt(x). Das ist (0.666 * x^(1.5)).
+		 * Jetzt muss man die Bereiche so aufteilen, dass alle vier Threads
+		 * den gleichen Anteil am Gesamtintegral haben.
+		 * Das macht bei m Threads den Aufwand y:
+		 * y = 2/3/m * (obere^(3/2) - untere^(3/2))
+		 * wobei obere und untere der Gesamtbereich sind.
+		 * obere = 
+		 */
+		
+	}
+
+}

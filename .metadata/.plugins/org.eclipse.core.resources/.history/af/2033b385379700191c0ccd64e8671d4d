@@ -1,0 +1,28 @@
+import java.util.LinkedList;
+import java.util.List;
+
+public class PrimzahlRechner extends Thread {
+	
+	
+	public static boolean istPrimzahl(int x) {
+		if (x < 2) return false;
+		int upperLim = (int)Math.round(Math.sqrt(x));
+		for (int i = 2; i <= upperLim; i++) {
+			if ((x % i) == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public static List<Integer> primazahlenZwischen(int anfang, int ende) {
+		List<Integer> prims = new LinkedList<Integer>();
+		
+		for (int i = anfang; i <= ende; i++) {
+			if (istPrimzahl(i)) {
+				prims.add(i);
+			}
+		}
+		return prims;
+	}
+}

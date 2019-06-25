@@ -1,0 +1,27 @@
+import java.util.List;
+
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// 2a
+		int lower = 1;
+		int upper = 4000;
+		List<Integer> prims = PrimzahlRechner.primzahlenZwischen(lower, upper);
+		for (Integer i : prims) {
+			System.out.println(i);
+		}
+		
+		// 3a
+		PrimzahlRechner r1 = new PrimzahlRechner(1, 1000);
+		PrimzahlRechner r2 = new PrimzahlRechner(1001, 2000);
+		PrimzahlRechner r3 = new PrimzahlRechner(2001, 3000);
+		PrimzahlRechner r4 = new PrimzahlRechner(3001, 4000);
+		
+		
+	}
+
+}

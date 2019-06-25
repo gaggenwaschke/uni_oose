@@ -1,0 +1,15 @@
+
+
+public class PrimazahlRechner {
+	
+	
+	public static boolean istPrimzahl(int x) {
+		int upperLim = (int)Math.round(Math.sqrt(x))+1;
+		for (int i = 2; i <= upperLim; i++) {
+			if ((x % i) == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+}

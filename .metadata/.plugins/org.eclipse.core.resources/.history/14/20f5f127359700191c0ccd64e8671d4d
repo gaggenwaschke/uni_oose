@@ -1,0 +1,10 @@
+
+
+public class PrimazahlRechner {
+	
+	
+	public static boolean istPrimzahl(int x) {
+		int upperLim = (int)Math.round(Math.sqrt(x))+1;
+		
+	}
+}

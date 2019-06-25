@@ -1,0 +1,8 @@
+
+public class PrimazahlRechner {
+	
+	
+	public static boolean istPrimzahl(int x) {
+		
+	}
+}
